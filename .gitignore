@@ -1,0 +1,25 @@
+# PyInstaller folders
+build/
+dist/
+*.spec
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Database
+history.db
+
+# Downloads
+*.mp4
+*.mp3
+*.mkv
+*.wav
+*.flac
+*.mka
+
+# Environments
+.env
+.venv
+env/
+venv/
