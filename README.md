@@ -1,5 +1,7 @@
 # Universal Video Downloader ユーザーマニュアル＆仕様書
 
+## [English](README_ENG.md)
+
 このアプリケーションは、yt-dlp・aria2c・ffmpegを利用し、最高速度と利便性を追求して設計された高機能な動画ダウンローダーです。
 
 ---
