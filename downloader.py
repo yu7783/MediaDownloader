@@ -31,7 +31,7 @@ class Downloader:
             ],
             # External downloader aria2c parameters (32 connections)
             'external_downloader': 'aria2c',
-            'external_downloader_args': ['-x', '32', '-s', '32', '-j', '32', '-k', '1M', '--file-allocation=none'],
+            'external_downloader_args': ['-x', '16', '-s', '32', '-j', '32', '-k', '1M', '--file-allocation=none'],
             'socket_timeout': 30,
             'retries': 10,
             'fragment_retries': 10
