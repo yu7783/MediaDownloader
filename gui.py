@@ -108,6 +108,16 @@ class App(ctk.CTk):
 
         # Show Home by default
         self.show_home()
+        
+        # v1.1.0 startup tasks
+        self.after(500, self.run_startup_tasks)
+
+    def run_startup_tasks(self):
+        from utils import check_and_install_dependencies, download_github_patches
+        # Check dependencies first (runs in main thread to show dialogs properly)
+        check_and_install_dependencies(self)
+        # Download patches in background
+        threading.Thread(target=download_github_patches, args=(self,), daemon=True).start()
 
     def show_home(self):
         self.history_frame.grid_forget()
